@@ -1,12 +1,12 @@
-# revision 24739
+# revision 24799
 # category Package
 # catalog-ctan /macros/generic/gates
-# catalog-date 2011-12-03 19:51:36 +0100
+# catalog-date 2011-12-05 10:50:52 +0100
 # catalog-license lppl
 # catalog-version 0.1
 Name:		texlive-gates
 Version:	0.1
-Release:	1
+Release:	2
 Summary:	Support for writing modular and customisable code
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/generic/gates
