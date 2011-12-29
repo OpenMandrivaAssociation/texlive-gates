@@ -34,16 +34,8 @@ implementation, running in any current environment, requires
 the texapi package, whereas the Lua version can be run with any
 Lua interpreter, not just LuaTeX.
 
-%pre
-    %{_sbindir}/texlive.post
-
 %post
     %{_sbindir}/texlive.post
-
-%preun
-    if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
-    fi
 
 %postun
     if [ $1 -eq 0 ]; then
@@ -60,7 +52,6 @@ Lua interpreter, not just LuaTeX.
 %doc %{_texmfdistdir}/doc/generic/gates/gates-doc.tex
 %doc %{_texmfdistdir}/doc/generic/gates/gates-doc.txt
 %doc %{_texmfdistdir}/doc/generic/gates/gates.tex
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -71,5 +62,3 @@ Lua interpreter, not just LuaTeX.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
