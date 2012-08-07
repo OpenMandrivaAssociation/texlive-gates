@@ -1,12 +1,12 @@
-# revision 24799
+# revision 26675
 # category Package
 # catalog-ctan /macros/generic/gates
-# catalog-date 2011-12-05 10:50:52 +0100
+# catalog-date 2012-05-27 01:03:23 +0200
 # catalog-license lppl
-# catalog-version 0.1
+# catalog-version 0.2
 Name:		texlive-gates
-Version:	0.1
-Release:	3
+Version:	0.2
+Release:	1
 Summary:	Support for writing modular and customisable code
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/generic/gates
@@ -19,15 +19,15 @@ Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
 
 %description
-Gates provides the means of writing code in a modular fashion:
-big macros or functions are divided into small chunks (called
-gates) with names, which can be externally controlled (e.g.
-they can be disabled, subjected to conditionals, loops...)
-and/or augmented with new chunks. Thus complex code may easily
-be customised without having to rewrite it, or even understand
-its implementation: the behavior of existing gates can be
-modified, and new ones can be added, without endangering the
-whole design. This allows code to be hacked in ways the
+The package provides the means of writing code in a modular
+fashion: big macros or functions are divided into small chunks
+(called gates) with names, which can be externally controlled
+(e.g. they can be disabled, subjected to conditionals,
+loops...) and/or augmented with new chunks. Thus complex code
+may easily be customised without having to rewrite it, or even
+understand its implementation: the behavior of existing gates
+can be modified, and new ones can be added, without endangering
+the whole design. This allows code to be hacked in ways the
 original authors might have never envisioned. The gates package
 is implemented independently for both TeX and Lua. The TeX
 implementation, running in any current environment, requires
