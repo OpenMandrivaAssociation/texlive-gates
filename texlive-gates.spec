@@ -1,4 +1,4 @@
-# revision 26675
+# revision 29803
 # category Package
 # catalog-ctan /macros/generic/gates
 # catalog-date 2012-05-27 01:03:23 +0200
@@ -6,7 +6,7 @@
 # catalog-version 0.2
 Name:		texlive-gates
 Version:	0.2
-Release:	1
+Release:	2
 Summary:	Support for writing modular and customisable code
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/generic/gates
@@ -46,12 +46,12 @@ Lua interpreter, not just LuaTeX.
 %files
 %{_texmfdistdir}/tex/generic/gates/gates.lua
 %{_texmfdistdir}/tex/generic/gates/gates.sty
+%{_texmfdistdir}/tex/generic/gates/gates.tex
 %{_texmfdistdir}/tex/generic/gates/t-gates.tex
 %doc %{_texmfdistdir}/doc/generic/gates/README
 %doc %{_texmfdistdir}/doc/generic/gates/gates-doc.pdf
 %doc %{_texmfdistdir}/doc/generic/gates/gates-doc.tex
 %doc %{_texmfdistdir}/doc/generic/gates/gates-doc.txt
-%doc %{_texmfdistdir}/doc/generic/gates/gates.tex
 
 #-----------------------------------------------------------------------
 %prep
@@ -62,23 +62,3 @@ Lua interpreter, not just LuaTeX.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Tue Aug 07 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.2-1
-+ Revision: 812268
-- Update to latest release.
-
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.1-3
-+ Revision: 752186
-- Rebuild to reduce used resources
-
-* Sat Dec 17 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.1-2
-+ Revision: 743253
-- texlive-gates
-
-* Fri Dec 09 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.1-1
-+ Revision: 739644
-- texlive-gates
-- texlive-gates
-
