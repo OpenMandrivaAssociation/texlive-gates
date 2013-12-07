@@ -6,7 +6,7 @@
 # catalog-version 0.2
 Name:		texlive-gates
 Version:	0.2
-Release:	5
+Release:	6
 Summary:	Support for writing modular and customisable code
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/generic/gates
